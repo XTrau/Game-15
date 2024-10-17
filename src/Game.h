@@ -11,10 +11,11 @@ class Game {
     const int FIELD_SIZE = 190;
     const int FONT_SIZE = 48;
     const int FIELD_COUNT = 4;
+    const int SHUFFLE_COUNT = 300;
 
     const Color WALL_COLOR = BLACK;
     const Color NUMBER_COLOR = BLACK;
-    const Color NUMBER_BACKGROUND = WHITE;
+    const Color NUMBER_BACKGROUND = BLUE;
 
 
     std::vector<std::vector<int> > game_field;
@@ -22,14 +23,21 @@ class Game {
 
     void move(char direction);
 
-    void shuffleField(int count);
+    void shuffleField();
+
+    void restartGame();
 
     void drawField() const;
 
     void drawNumbers() const;
 
+    bool checkWin() const;
+
+    void drawWin() const;
+
 public:
     Game();
+
 
     void run();
 };

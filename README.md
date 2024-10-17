@@ -2,6 +2,11 @@
 
 The project is simple implementation of game "15" using the [raylib](https://www.raylib.com/) library for graphics.
 
+
+### Screenshot
+
+![img.png](screenshots/img.png)
+
 ## Getting started
 
 ### Prerequisites
